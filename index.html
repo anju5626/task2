@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+  <title>Landing Page</title>
+  
+  <link rel="stylesheet" href="styling2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <?php if (!empty($errors)): ?>
+    <div style="color: red;">
+        <?php foreach ($errors as $err): ?>
+            <p><?php echo $err; ?></p>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+  <header>
+     
+    <div class="logo">Trivaro</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.php">sign In</a></li>
+        <li><a href="login.php">Login</a></li>
+        
+        <li class="dropdown">
+          <a href="#"> serves</a>
+          <ul class="dropdown-menu">
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="food.html">Food </a></li>
+            <li><a href="hotet.html">hotel </a></li>
+          
+          </ul>
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-bg">
+    <div class="hero-content">
+      <h1>Travel the World with Trivaro</h1>
+      <p>Your Journey. One World. Trivaro.</p>
+      <a href="#" class="cta-button">Start Exploring</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="feature-list">
+      
+      <div class="feature">
+        <h3>Up to <b>20% OFF</b></h3>
+        <p>on Domestic Flights</p>
+       
+      </div>
+      <div class="feature">
+        <h3>Review</h3>
+        <p>4.5/5</p>
+      </div>
+      <div class="feature">
+        <h3> WHY Trivaro?</h3>
+        <p>how Trivaro helps in ,</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trivaro . All rights reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>
